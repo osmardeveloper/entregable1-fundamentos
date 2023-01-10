@@ -1,0 +1,414 @@
+* {
+    background-color: #020403;
+    font-family: 'Rubik', sans-serif;
+    color: #FFFF;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ } 
+body{
+    position: relative;
+}
+
+ .menu{
+    display: flex;
+    justify-content: end;
+    padding: 5px 15px 0 0;
+    width: auto;
+    height: 30px;
+    margin: 0;
+ }
+ 
+ .menu i{
+    color: #fff;
+    font-size: 27px;
+ }
+
+ .menubar{
+    display: none
+  }
+
+  .menuMobile{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    display: none;
+  }
+  
+  .active{
+    display: flex;
+  }
+
+  .menuMobile a{
+    color: darkslategrey;
+    margin: 15px 30px;
+    background-color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+ .menubar a{
+    text-decoration: none;
+    color: #ADADAD;
+    font-size: 18px;
+    margin-right: 60px; 
+ }
+ 
+ .imgMobile{
+    width: 190px;
+    height: 220px;
+    border-radius: 50%;
+    background-image: url(img/perfilOs.jpg);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    margin: 20px;
+ }
+
+ .container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container img {
+    margin: 10px 0 30px 0;
+       }
+
+.container h3 {
+    color: #ADADAD;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    }
+       
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.textoIconos {
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: 0;
+    max-width: 150px;
+    text-align: center;
+   }
+
+.fr {
+    display: flex;
+    justify-content: center;
+}
+
+.fr h4{
+    margin: 0px;
+    padding: 0px;
+    color: #ADADAD;  
+    font-weight:  500;  
+}
+
+
+.fr p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.portafolio{
+  padding: 20px;
+}
+
+.contacto{
+    padding: 20px;
+  }
+
+.portafolio img{
+    padding: 20px 0;
+  }
+
+  .centrar-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.titulo{
+    font-size: 40px;
+    font-weight:  500;
+    margin: 0 25px;
+    line-height: 48px;
+}
+
+.subtitulo{
+    font-size: 32px;
+    margin-top: 50px;
+    font-weight:  500;     
+    text-align: center; 
+}
+
+.row img {
+    margin: 10px 10px 0 10px;
+}
+
+.efecto:hover {
+  border: 1px solid rgb(0, 242, 255);
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 10px 15px rgb(0, 58, 83);
+}
+
+.iconos img {
+    margin: 20px 0px 10px 0px;
+}
+
+p{
+ margin: 20px 10px 0 10px;   
+ color: #ADADAD;
+ line-height: 25px;
+}
+
+.ico{
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #251c1c;
+}
+
+.ico2{
+    padding: 20px;
+    border-radius: 48%;
+    border: 2px solid  #ADADAD;
+    margin-bottom: 10px;
+   }
+
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto auto;
+}
+
+.grid div{
+       padding: 0 ;
+    margin: 0;
+}
+
+.grid div:nth-child(1),
+.grid div:nth-child(2),
+.grid div:nth-child(3),
+.grid div:nth-child(4) {
+    border-bottom: 1px solid #251c1c;
+}
+
+.grid p {
+padding: 0 0 10px 0;
+text-align: start;
+font-size: 16px;
+font-weight: 200;
+color:#ADADAD
+}
+
+.none {
+    display: none;
+}
+
+.logo-esc{
+    display: none;
+}
+
+
+@media  (min-width: 1000px) and (max-width: 1700px){
+    .menubar{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        position: fixed;
+        right: 0;
+        background-color: #020403;
+      }
+
+      .menubar a:hover{
+        color: rgb(61, 157, 217);
+        text-shadow: -4px 8px 3px rgb(0, 58, 83);
+      }
+
+      .menu i{
+        display: none;
+     }
+
+     .imgMobile{
+        display: none;
+    }
+    .menuMobile{
+        display: none;
+    }
+    
+    .imgPc{
+        width: 336px;
+        height: 388px;
+        border-radius: 50%;
+        background-image: url(img/perfilOs.jpg);
+        background-size: 388px;
+        margin-top: 50px;
+     }
+
+    .titulo{
+        font-size: 80px;
+        font-weight:  500;
+        margin: 0 25px;
+        line-height: 80px;
+    }
+    
+    .subtitulo{
+        font-size: 50px;
+        margin-top: 40px;
+        font-weight:  500;      
+    }
+    .container h3 {
+        color: #ADADAD;
+        font-size: 50px;
+        font-weight: 600;
+       margin-bottom: 15px;
+       }
+       .row img {
+        margin: 30px 70px 0 70px;
+        width: 70px;
+        height: 70px;
+    }
+    p{
+        margin: 20px 10px 0 10px;   
+        color: #ADADAD;
+        line-height: 40px;
+        font-size: 25px;
+       }       
+ 
+.escritorio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    
+}
+.escritorio div{
+    margin: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ico{
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #251c1c;
+}
+.textoIconos {
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: 0;
+    max-width: 350px;
+    text-align: center;
+   }
+
+  .centrar-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .grid p {
+    padding: 0;
+    text-align: start;
+    font-size: 25px;
+    font-weight: 200;
+    color:#ADADAD;
+    line-height: 25px;
+    }
+
+    .grid div{
+        padding: 0 120px;
+     margin: 0;
+ }
+ 
+}
+
+@media  (min-width: 700px) and (max-width: 999px){
+    .menubar{
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        position: fixed;
+        background-color: #020403;
+        right: 0;
+      }
+
+     .menubar a:hover{
+        color: rgb(61, 157, 217);
+        text-shadow: -4px 8px 3px rgb(0, 58, 83);
+      }
+      
+      .menubar a{
+        text-decoration: none;
+        color: #ADADAD;
+        font-size: 18px;
+        margin-right: 30px;
+        }
+        .menu i{
+            display: none;
+         }
+
+       .imgMobile{
+        display: none;
+        }
+        .menuMobile{
+            display: none;
+        }
+    
+        .imgPc{
+        width: 336px;
+        height: 388px;
+        border-radius: 50%;
+        background-image: url(img/perfilOs.jpg);
+        background-size: 388px;
+        margin-top: 50px;
+         }
+
+        
+  .grid p {
+    padding: 0;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 200;
+    color:#ADADAD;
+    line-height: 20px;
+    }
+
+    .grid div{
+        padding: 0 80px;
+     margin: 0;
+     }
+}
+
+@media  (min-width: 375px) and (max-width: 699px){
+
+}
