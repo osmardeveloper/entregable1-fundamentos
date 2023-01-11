@@ -238,7 +238,7 @@ color:#ADADAD
 }
 
 
-@media  (min-width: 1000px) and (max-width: 1700px){
+@media  (min-width: 1000px) {
     .menubar{
         display: flex;
         justify-content: flex-end;
@@ -409,6 +409,4 @@ color:#ADADAD
      }
 }
 
-@media  (min-width: 375px) and (max-width: 699px){
 
-}
